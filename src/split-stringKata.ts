@@ -5,8 +5,6 @@
 // * 'abc' =>  ['ab', 'c_']
 // * 'abcdef' => ['ab', 'cd', 'ef']
 
-export function splitString(str: string){
-   let str = '';
-
-   
+export function splitString(str: string) {
+  return (str + "_").match(/.{2}/g) || [];
 }
